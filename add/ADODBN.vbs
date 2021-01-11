@@ -10,7 +10,7 @@ Dim inStream
 Set inStream = CreateObject("ADODB.Stream")
 inStream.type = 2 　'1:バイナリデータ 2:テキストデータ
 inStream.charset = "UTF-8" 　'入力ファイルの文字コード設定
-inStreamopen
+inStream.open
 inStream.LoadFromFile inputFileName 　'入力ファイルを読み込む
 
 '出力ストリームの生成・設定（テキスト、UTF-8）
